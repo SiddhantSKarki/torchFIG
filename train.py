@@ -15,7 +15,7 @@ from config import CONFIG_DEFAULT
 
 # TODO: Change the type of DataLoader depending on your needs
 from torch_geometric.loader import DataLoader
-# from torch.utils.data import Dataset, DataLoader, random_split
+# from torch.utils.data import DataLoader
 
 VISUALIZATION_SIZE = 5
 # TODO: Define your transforms here
