@@ -122,9 +122,9 @@ class SuperpixelDefaultDataset(Dataset):
     - Pads adjacency and features to MAX_NODES
     Also returns the original MNIST 28x28 image.
     """
-    def __init__(self, root="./data", max_nodes=256, num_features_per_node=2, train=True):
+    def __init__(self, root="./data", max_nodes=256, num_features_per_node=2, train=True, transform=None):
         super().__init__()
-        self.dataset = MNISTSuperpixels(root=root, train=train)
+        self.dataset = MNISTSuperpixels(root=root, train=train, transform=transform)
         self.MAX_NODES = max_nodes
         self.NUM_FEATURES_PER_NODE = num_features_per_node
 

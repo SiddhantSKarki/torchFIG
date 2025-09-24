@@ -19,7 +19,7 @@ CONFIG_DEFAULT  = {
     },
 
     "data": {
-        "dataset": get_env("DATASET", "SuperPixelGraph"),
+        "dataset": get_env("DATASET", "SuperPixelGraphDefault"),
         "dataset_params": {
             "root": get_env("DATA_DIR", "./data"),
             "max_nodes": 75,

@@ -186,7 +186,7 @@ def train():
     dataset_cls = torch.datasets.get(cfg["data"]["dataset"])
 
     # <=== load TRAIN dataset ====>
-    train_dataset = dataset_cls(transforms=TRANSFORMS, **dataset_params)
+    train_dataset = dataset_cls(transform=TRANSFORMS, **dataset_params)
 
     # <=== load TEST dataset ====>
     test_dataset = dataset_cls(train=False, **dataset_params)
